@@ -1,0 +1,30 @@
+.theme-viewer {
+    background-color: var(--back);
+    padding: 2em;
+    font-size: 1.3em;
+    color: var(--text);
+
+    .color-group {
+        display: flex;
+        flex-direction: column;
+        .color-box {
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            border: 1px solid transparent;
+            
+            > div {
+                padding: 1rem;
+                > div {
+                    color: var(--light-text);
+                }
+            }
+            &.shrink {
+                > div {
+                    padding: calc(1rem - 4px);
+                }
+            }
+        }
+    }
+}

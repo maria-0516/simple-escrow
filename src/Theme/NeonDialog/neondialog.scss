@@ -1,0 +1,51 @@
+.neon-dialog {
+    .dialog-header {
+        font-size: 1.3em;
+        padding: 1rem;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        > :nth-child(2) {
+            background-color: transparent;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            right: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text);
+            cursor: pointer;
+            
+            &:hover {
+                background-color: var(--back-light-hover);
+            }
+        }
+        > :nth-child(3) {
+            width: 2.8rem;
+            height: 2.8rem;
+            padding-bottom: 0.5rem;
+            border-radius: 50%;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    .body {
+        border-radius: 0 0 15px 15px;
+        padding: 4rem;
+        padding-top: 2rem;
+        max-height: 85vh;
+        @media (max-width: 768px) {
+            padding: 3rem 0.5rem;
+        }
+    }
+}
